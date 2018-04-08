@@ -47,6 +47,19 @@ Run commands, run webpack to generate bundle.js before jekyll
 
 Access your [jekyll site](http://localhost:4000)
 
+## Deploying
+
+```bash
+yarn run webpack.js # to generate your bundle.js file
+jekyll build # generate `_site` folder
+```
+
+After that you just need to push `_site` folder to gh-pages branch.
+
+How to do this? I just create an orphaned branch with the folder content, commit and push, you can check the [gh-pages branch](https://github.com/fernandes/jekyll-webpack-ssr/tree/gh-pages)
+
+Wanna see it working? Check the [demo](http://www.coding.com.br/jekyll-webpack-ssr/)
+
 ## Next Steps
 
 - [ ] I'm considering creating a plugin for Jekyll so anyone can use it easily (not sure about the webpack stuff)
